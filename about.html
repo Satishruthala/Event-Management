@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.navbar{
+    background-color:#0A0903;
+    overflow: hidden;
+    position:sticky; 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    top: 0; 
+    z-index: 1000; 
+    padding: 15px 30px;   
+}
+.nav-list{
+    display:flex;
+    justify-content:center;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.nav-link{
+    color:white;
+    text-decoration:none;
+    padding:0px 0px;
+    font-size:16px;
+    position: relative;
+}
+.nav-link{
+    padding:8px 19px;
+    font-size:14px;
+}
+.nav-link:hover{
+    background-color:#068206;
+}
+.nav-list li{
+    margin:0 15px;
+}
+.nav-link::after{
+content: "";
+height: 2px;
+background:darkviolet;
+width: 0px;
+bottom: -4px;
+left: 0;
+position: absolute;
+transition: 0.3s all linear;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-header {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #3498db;
+    color: #fff;
+}
+
+.about-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about-header p {
+    font-size: 18px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    gap: 20px;
+}
+
+.about-story, .about-mission {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.about-story p{
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+.about-mission p{
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.about-story img, .about-mission img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.about-story h2, .about-mission h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e0f7fa;
+}
+
+.team-section h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 200px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #3498db;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #777;
+}
+.foot{
+    height:30px;
+    width:100vw;
+    font-size: 1px;
+    bottom:0px;
+    color: white;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    background-color: #000000;
+    padding:4px;
+} 
+.foot p{
+    margin: 0px;
+    font-size: 18px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="about-page">
+    <div class="about-header">
+        <h1>About Us</h1>
+        <p>Turning Your Dream Events into Reality</p>
+    </div>
+    <div class="about-content">
+        <div class="about-story">
+            <h2>Our Story</h2>
+            <p>Founded with passion and dedication, we aim to transform your vision into unforgettable experiences. Our team of creative professionals
+                 and event enthusiasts brings together expertise in design, coordination, and execution, ensuring every detail is flawless.</p>
+            <img src="about1.jpg" alt="Our Story Image">
+            <p>At Lovely Events, we believe that every event tells a story – your story. We take pride in creating customized experiences that reflect your personality, style, 
+                and aspirations. With creativity and innovation at our core, we transform ordinary spaces into stunning venues, creating atmospheres that captivate and delight
+                 every guest.where exceptional moments are crafted to perfection! We are a passionate team of event enthusiasts, designers</p>
+        </p>
+        </div>
+        
+        <div class="about-mission">
+            <h2>Our Mission</h2>
+            <p>We strive to exceed expectations by delivering top-tier event management services, tailoring each event to reflect the client's 
+                unique style and preferences. From intimate weddings to grand corporate gatherings, our mission is to create memorable experiences.</p>
+            <img src="about2.jpg" alt="Mission Image">
+        </div>
+    </div>
+
+    <div class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="venkat.png" alt="Team Member 1">
+                <h3>Venkatesh</h3>
+                <p>Founder & CEO</p>
+                <p>8886850828</p>
+            </div>
+            <div class="team-member">
+                <img src="pranay.png" alt="Team Member 2">
+                <h3>B Pranay</h3>
+                <p>Event Coordinator</p>
+                <p>9391175838</p>
+            </div>
+            <div class="team-member">
+                <img src="jash.png" alt="Team Member 3">
+                <h3>K Jaswanth</h3>
+                <p>Creative Director</p>
+                <p>8185074320</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="foot">
+        <p>&copy;2024 Lovely events. All Rights Reserved</p>
+    </footer>
+</body>
+</html>

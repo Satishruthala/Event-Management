@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About.us</title>
+    <style>
+
+body{
+            font-family:Arial, Helvetica, sans-serif;
+            margin:0;
+            padding:0;
+            background-color: #cdb4db;
+        }
+        .navbar{
+            background-color:#0A0903;
+            overflow: hidden;
+            position:sticky; 
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            top: 0; 
+            z-index: 1000; 
+            padding: 15px 30px;   
+        }
+        .nav-list{
+            display:flex;
+            justify-content:center;
+            list-style-type:none;
+            margin:0;
+            padding:0;
+        }
+        section{
+            padding:50px;
+            text-align:none;
+        }
+        h1{
+            font-size:24px;
+            color:#333;  
+        }
+        p{
+            font-size:16px;
+            color:#666;
+        }
+        .nav-list li{
+            margin:0 15px;
+        }
+        .nav-link{
+            color:white;
+            text-decoration:none;
+            padding:0px 0px;
+            font-size:16px;
+            position: relative;
+        }
+        .nav-link{
+            padding:8px 19px;
+            font-size:14px;
+        }
+        .nav-link:hover{
+            background-color:#068206;
+        }
+        .nav-link::after{
+        content: "";
+        height: 2px;
+        background:darkviolet;
+        width: 0px;
+        bottom: -4px;
+        left: 0;
+        position: absolute;
+        transition: 0.3s all linear;
+        }
+        .nav-link:hover::after{
+            width: 100%;
+        }
+        .services-section {
+            text-align: center;
+            padding: 50px;
+            background-color:#cdb4db ;
+        }
+        
+        .services-section h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+
+        }
+        .service-card {
+            background-color: #abc4ab;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 250px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card h3 {
+            font-size: 22px;
+            color: #5465ff;
+            margin-bottom: 15px;
+
+        }
+        
+        .service-card p {
+            font-size: 16px;
+            color:#666;
+            line-height: 1.6;
+
+        }
+        .foot{
+            height:30px;
+            width:100vw;
+            font-size: 1px;
+            bottom:0px;
+            align-items: center;
+            display:flex;
+            justify-content: center;
+            background-color: #000000;
+            padding:4px;
+        } 
+        .foot p{
+            margin: 0px;
+            font-size: 18px;
+            color:aliceblue;
+        }
+        a{
+            text-decoration: none;
+        } 
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="Contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="services-section">
+        <h2>Our Services</h2>
+
+            <div class="services-container">
+                <a href="wedding.html"><div class="service-card">
+                    <h3>Wedding          plannings </h3>
+                    <p>Creating beautiful and memorable weddings, customized to match the couple's unique love story and vision.</p>
+                </div>
+           </a>
+           <a href="Bgm.html">
+            <div class="service-card">
+                <h3>Corporate Events</h3>
+                <p>Organizing seamless corporate events, including conferences, seminars, and team-building experiences.</p>
+            </div></a>
+            <a href="vip.html">
+            <div class="service-card">
+                <h3> VIP Launches</h3>
+                <p>Planning high-end, exclusive launches that showcase products, services, or brands in the most luxurious way.</p>
+            </div>
+        </a>
+        <a href="art.html">
+            <div class="service-card">
+                <h3>Cultural Exhibitions</h3>
+                <p>Curating and managing exhibitions that celebrate art, culture, and creativity in an inspiring environment.</p>
+            </div>
+        </a>
+        <a href="award.html">
+            <div class="service-card">
+                <h3>Award Ceremonies</h3>
+                <p>Delivering unforgettable award nights with a grand ambiance, sound, and lighting to honor achievements. </p>
+            </div>
+        </a>
+        </div>
+    </div>
+    <footer class="foot">
+        <p>&copy;2024 Lovely events. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
